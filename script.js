@@ -2,9 +2,9 @@
 
 function calculateTip() {
   //store the data of input
-  var billAmount = document.getElementById("billAmount").value;
-  var serviceQuality = document.getElementById("serviceQuality").value;
-  var numPeople = document.getElementById("totalPeople").value;
+  let billAmount = document.getElementById("billAmount").value;
+  let serviceQuality = document.getElementById("serviceQuality").value;
+  let numPeople = document.getElementById("totalPeople").value;
 
   //   quick validation
   if (billAmount === "" || serviceQuality == 0) {
@@ -22,7 +22,7 @@ function calculateTip() {
   }
 
   //   do some Math!
-  var total = (billAmount * serviceQuality) / numPeople;
+  let total = (billAmount * serviceQuality) / numPeople;
   total = Math.round(total * 100) / 100;
   total = total.toFixed(2);
 
